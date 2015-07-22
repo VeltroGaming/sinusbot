@@ -55,7 +55,7 @@ RUN echo YoutubeDLPath = \"$YTDL_BIN\" >> ./config.ini
 RUN wget -qO- http://dl.4players.de/ts/releases/$TS3_VERSION/TeamSpeak3-Client-linux_amd64-$TS3_VERSION.run | \
   tail -c +$TS3_OFFSET | \
   tar -xzf- -C $TS3_DIR
-RUN cp ./plugin/libsoundbot_plugin.so ./TeamSpeak3-Client-linux_amd64/plugins
+RUN cp ./libsoundbot_plugin.so ./TeamSpeak3-Client-linux_amd64/plugins
 
 VOLUME $SINUS_DIR
 
