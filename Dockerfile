@@ -47,7 +47,7 @@ WORKDIR $SINUS_DIR
 USER sinusbot
 
 # Download and install the SinusBot
-RUN wget -qO- http://frie.se/ts3bot/ts3soundboard-$SINUS_VERSION.tar.bz2 | \
+RUN wget -qO- http://frie.se/ts3bot/ts3soundboardbot-$SINUS_VERSION.tar.bz2 | \
   tar -xjf- -C ./
 RUN cp ./config.ini.dist ./config.ini
 RUN echo YoutubeDLPath = \"$YTDL_BIN\" >> ./config.ini
