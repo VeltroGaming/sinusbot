@@ -4,7 +4,7 @@ FROM debian
 MAINTAINER buschtoens
 
 # SinusBot config
-ENV SINUS_VERSION 0.9.8
+ENV SINUS_VERSION 0.9.5
 ENV SINUS_DIR /opt/ts3soundboard
 ENV SINUS_DATA /opt/data
 
